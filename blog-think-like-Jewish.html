@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <title>เขียนฝันด้วยชีวิต</title>
+</head>  
+<body>
+    <!--ตรงนี้คือส่วนของ navbar--> 
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
+        <div class="container">  <!--เริ่มจะเพิ่ม class container เพื่อที่เราจะสามารถจัดหน้าเว็บให้มันดูสวยงามมากขึ้น-->
+            <!-- แท็กนี้คือแท็กที่จะแสดง Logo และชื่อ ซึ่งจะอยู่ทางด้านซ้ายมือ  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+                BookStory
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarkey" aria-controls="navbarkey" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--ตรงแท็กนี้จะแสดงรายการและแสดงอยู่ทางด้านขวามมือ โดยที่เราสามารถสั่งเกตโค้ดตรง Class "nabbar-nav ml" (ml) หมายถึงทางด้านซ้ายโล่งให้มาชิดทางด้านขวา-->
+            <div class="collapse navbar-collapse" id="navbarkey">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div> 
+    </nav>
+
+    <!--Section jaralax-->
+    <!-- section page title  --> <!--ตรงส่วนนี้จะทำการกำหนด class เพื่อทำการกำหนดค่า ใน css ตามตัวอย่างคือ Class="page-title"-->
+    <header class="jarallax" data-jarallax='{ "speed": 0.6 }' style="background-image: url('https://asset.mebmarket.com/meb/server1/19419/Thumbnail/large.gif?4');">
+        <div class="blog-image"> <!--blog-image เพื่อเป็นการตั้งค่าให้พื้นหลังให้ได้อย่างชัดเจนมากยิ่งขึ้น-->
+            <h1 class="display-4 font-weight-bold">เขียนฝันด้วยชีวิต</h1>
+            <p class="lead">เประชาคม ลุนาชัย เขียน</p>
+            <p class="lead"><u>แนะนำหนังสือน่าอ่าน โดย สมชัย ทาสะโก</u></p>
+        </div>
+    </header>
+
+    <!--section blog-detail-->
+    <section class="container blog-content">
+        <div class="row">
+            <div class="col-12">
+                <h2>เขียนฝันด้วยชีวิต</h2>
+                <p>
+                    “ประชาคม ลุนาชัย” จากเด็กหนุ่มแดนอีสาน มุ่งหน้ามาล่าฝันที่เมืองหลวงเฉกเช่นเด็กต่างจังหวัดทั่วไป อาชีพลูกจ้างร้านอาหาร คนงานโรงงาน 
+                    รับจ้างเฝ้าวังกุ้ง ทำไร่ ติดเรือประมง เจ้าหน้าที่รักษาความปลอดภัย “ประชาคม ลุนาชัย” ฝันจะเป็นนักเขียนตั้งแต่หลงเข้าไปในห้องสมุดประชาชน
+                    แห่งหนึ่งโดยไม่ได้ตั้งใจ ความฝันที่จะเป็นนักเขียนเหมือนดั่งไฟคุกรุ่นที่เติมเชื้อเพลิงให้ชีวิตอยู่เสมอ เขาเดินทางผ่านอีกหลายร้อน อีกหลายหนาว 
+                    ล้มลุกคลุกคลาน กระเสือกกระส้น กว่าความฝันจะเป็นจริงได้จึงต้องพานพบกับบททดสอบในชีวิตอีกมากมาย
+                </p>
+
+                <figure class=text-center>
+                    <img src="assets/image/Blog/img1.jpg" alt="เขียนฝันด้วยชีวิต" width="350px" height="500px">
+                    <figcaption>หนังสือนวนิยายเขียนฝันด้วยชีวิต</figcaption>
+                </figure>
+
+                <p>
+                    บนเส้นทางสายวรรณกรรมซึ่งขรุขระและคดเคี้ยวยิ่งนัก เขาท้อ เขาเหนื่อย หลายครั้งล้มจนไม่อยากลุก แต่เหมือนฟ้าลิขิตให้เขาเกิดมาเพื่อเขียนหนังสือ
+                     สุดท้ายแล้วความฝันนั้นจึงกลายเป็นจริง นวนิยาย "เขียนฝันด้วยชีวิต" ของ "ประชาคม ลุนาชัย" เต็มเปี่ยมไปด้วยแรงบันดาลใจสำหรับคนที่คิดจะก้าว
+                     เดินไปบนเส้นทางวรรณกรรม หรืออะไรสักอย่างที่ใฝ่ฝันอยากจะลงมือทำให้สำเร็จในชีวิตนี้
+                </p>
+
+                <figure class=text-center>
+                    <img src="assets/image/S__3719178.jpg" alt="เขียนฝันด้วยชีวิต" width="350px" height="500px">
+                    <figcaption>ภาพโดย สมชัย ทาสะโก</figcaption>
+                </figure>
+
+                <p>
+                    “ผมมาเพื่อไขว่คว้าโอกาส บนแผ่นดินที่เต็มไปด้วยผู้คน เงิน งาน และสถานการศึกษา ผมเป็นนักสู้ที่ไม่มีข้อต่อรองใด ๆ 
+                    วางชีวิตทั้งหมดไว้เป็นเดิมพันเพื่อเป้าหมายที่ยังมาไม่ถึง” (จากหน้า ๒๒ ฉบับพิมพ์ครั้งที่ ๔ โดย สำนักพิมพ์เอโนเวล,พฤศจิกายน ๒๕๕๔)
+                </p>
+
+            </div>
+            <div class="col-12">
+                <hr>
+                <p class="text-right text-muted"> 29 กรกฏาคม 2562</p>
+                <p class="text-right text-muted"> แนะนำหนังสือน่าอ่าน โดย สมชัย ทาสะโก</p>
+            </div>
+    </section>
+
+ 
+
+    <!--Section  Star-->
+    <section class="position-relative py-5 jarallax" data-jarallax='{ "speed": 0.6 }'  style="background-image: url('https://images.unsplash.com/photo-1481624362406-b7817fa45ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="assets/image/logo.png" width="150" class="img-fluid" alt="logo">
+                    <h3 class="text-white display-4 font-weight-bold">ยินต้อนรับสู่ชุมชนนักอ่านของเรา</h3>
+                    <div class="star-rating"><!--ตรงส่วนนี้จะเป็นการเขียนในส่วนของ Star-rating-->
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <div class="star-current" style="width: 100%;"> <!--คำสั่ง inline style="width: 100% เพื่อเป็นการให้คะแนน-->
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="semi-footer  p-5 text-center text-md-left">
+        <div class="row">
+             <div class="col-md-4">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+                    BookStory
+                </a>
+                <p>
+                    <i class="fa fa-phone "></i> <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+                    : 080-742-1388 <br>
+                    <i class="fa fa-envelope"></i> <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+                    : Email wissanu.khong@gmail.com <br>
+                    <i class="fa fa-map-marker"></i> <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+                    : 326 ซ.นนทรี 14 แยก 12 ถ.ช่องนนทรี แขวงช่องทรี เขตยานนาวา กรุงเทพมหานคร 10120
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h4>เมนู</h4>
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z60mszeJpJ8" frameborder="0" allowfullscreen></iframe>
+                </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-end">
+    <span> COPYRIGHT @ 2021
+        <a href="https://www.google.co.th/" target="_blank">
+            All right Resevred
+        </a>
+    </span>
+</footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEMsadlezXG6IXRqAnmWnIqUJmtv8J8PQ&callback=initMap"></script> 
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

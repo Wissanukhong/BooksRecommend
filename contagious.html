@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/mystyle.css" />
+    <title>ธรรมดาแต่ดังมาก ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้</title>
+  </head>
+  <body>
+    <!--ตรงนี้คือส่วนของ navbar-->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha"
+    >
+      <div class="container">
+        <!--เริ่มจะเพิ่ม class container เพื่อที่เราจะสามารถจัดหน้าเว็บให้มันดูสวยงามมากขึ้น-->
+        <!-- แท็กนี้คือแท็กที่จะแสดง Logo และชื่อ ซึ่งจะอยู่ทางด้านซ้ายมือ  -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/image/logo.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+          BookStory
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarkey"
+          aria-controls="navbarkey"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--ตรงแท็กนี้จะแสดงรายการและแสดงอยู่ทางด้านขวามมือ โดยที่เราสามารถสั่งเกตโค้ดตรง Class "nabbar-nav ml" (ml) หมายถึงทางด้านซ้ายโล่งให้มาชิดทางด้านขวา-->
+        <div class="collapse navbar-collapse" id="navbarkey">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Section jaralax-->
+    <!-- section page title  -->
+    <!--ตรงส่วนนี้จะทำการกำหนด class เพื่อทำการกำหนดค่า ใน css ตามตัวอย่างคือ Class="page-title"-->
+    <header
+      class="jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://images-se-ed.com/ws/Storage/Originals/978616/287/9786162871672L.jpg?h=6550906b0908693d2261e1289e67d282');
+      "
+    >
+      <div class="blog-image">
+        <!--blog-image เพื่อเป็นการตั้งค่าให้พื้นหลังให้ได้อย่างชัดเจนมากยิ่งขึ้น-->
+        <h1 class="display-4 font-weight-bold">
+          ธรรมดาแต่ดังมาก ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้
+        </h1>
+        <p class="lead">
+          อหนังสือเล่มนี้ถูกออกแบบมาสำหรับคนที่อยากให้ผลิตภัณฑ์ แนวคิด
+          หรือพฤติกรรมของตัวเองแพร่กระจายไปอย่างกว้างขวาง หนังสือ Contagious
+          หรือในชื่อภาษาไทยว่า “ธรรมดาแต่ดังมาก
+          ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้”
+        </p>
+      </div>
+    </header>
+
+    <!--section blog-detail-->
+    <section class="container blog-content">
+      <div class="row">
+        <div class="col-12">
+          <h2>ธรรมดาแต่ดังมาก ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้</h2>
+
+          <p>
+            ผู้เขียนอธิบายถึง 3 วิธี ที่จะช่วยสร้างภาพลักษณ์ทางสังคม ซึ่งได้แก่
+            (1) ค้นหาความน่าทึ่งที่ซ่อนอยู่ภายใน (2)
+            ใช้ประโยชน์จากคุณลักษณะของเกม (3) สร้างความรู้สึกเหมือนเป็นคนวงใน
+          </p>
+          <ol>
+            <li>
+              ค้นหาความน่าทึ่งที่ซ่อนอยู่ภายใน สิ่งที่น่าทึ่ง คือ สิ่งที่แตกต่าง
+              พิเศษ และควรค่าแก่การได้รับความสนใจ
+              บางสิ่งอาจน่าทึ่งเพราะมันแปลกใหม่ ทำให้ประหลาดใจ ผิดธรรมชาติ
+              หรือแค่ดูน่าสนใจ แต่แง่มุมที่สำคัญที่สุดของสิ่งที่น่าทึ่ง คือ
+              มันมีค่ามากพอที่เราจะหยิบยกมาแสดงความคิดเห็นหรือพูดถึง
+              สิ่งที่น่าทึ่งก่อให้เกิดภาพลักษณ์ทางสังคมที่ดี
+              เพราะมันทำให้ผู้พูดกลายเป็นคนที่น่าทึ่งไปด้วย
+              กุญแจสำคัญของการค้นหาความน่าทึ่งที่ซ่อนอยู่ภายในก็คือ
+              การหาคำตอบว่าอะไรทำให้บางสิ่งบางอย่างดูน่าสนใจ น่าประหลาดใจ
+              หรือแปลกใหม่ วิธีหนึ่งในการสร้างความประหลาดใจ ก็คือ
+              การทำในสิ่งที่แตกต่างจากที่ผู้คนคาดหวังไว้
+              เราสามารถค้นพบความน่าทึ่งที่ซ่อนอยู่ภายในได้เสมอ
+              ไม่ว่าผลิตภัณฑ์หรือแนวคิดนั้นจะเป็น อะไรก็ตาม สิ่งที่ต้องทำก็คือ
+              มองให้ออกว่ามีอะไรโดดเด่นเกี่ยวกับมันบ้าง
+            </li>
+            <br />
+            <li>
+              ใช้ประโยชน์จากคุณลักษณะของเกม
+              สาเหตุหนึ่งที่เกมจูงใจเราได้เป็นเพราะมันกระตุ้นอารมณ์ความรู้สึกของเรา
+              เราทุกคนล้วนชอบการทำสิ่งต่าง ๆ ให้สำเร็จ
+              และหลักฐานที่แสดงให้เห็นถึงความก้าวหน้าของเราอย่างชัดเจนก็ย่อมทำให้เรารู้สึกดี
+              เกมยังจูงใจเราด้วยการทำให้เราเปรียบเทียบตัวเองกับคนอื่นด้วย
+              มนุษย์เราให้ความสำคัญกับสถานะและการแบ่งชนชั้นเช่นเดียวกับสัตว์ชนิดอื่น
+              ๆ เราชื่นชอบความรู้สึกที่ว่าตัวเองมีสถานะสูงส่ง มีอำนาจ
+              หรือเป็นหัวหน้ากลุ่ม
+              คุณลักษณะของเกมช่วยสร้างภาพลักษณ์ทางสังคมขึ้นมา
+              เพราะการทำผลงานได้ดีนั้นย่อมทำให้เราดูดี
+              และคนเราก็ชอบคุยโวเกี่ยวกับสิ่งที่ตัวเองทำสำเร็จ
+              คุณลักษณะของเกมกระตุ้นให้เกิดการบอกต่อ
+              คนเราพูดคุยกันเพราะอยากอวดความสำเร็จของตัวเอง
+              แต่ขณะเดียวกันพวกเขาก็ต้องพูดถึงแบรนด์
+              หรือหัวข้อที่เกี่ยวข้องกับความสำเร็จของพวกเขาด้วย
+            </li>
+            <br />
+            <li>
+              สร้างความรู้สึกเหมือนเป็นคนวงใน ใช้ประโยชน์จากพลังของความหายาก
+              และสิทธิพิเศษ ความหายากเกี่ยวข้องกับเรื่องของปริมาณ ดังนั้น
+              ถ้าสิ่งไหนหายากก็หมายความว่ามีคนต้องการเยอะ ผลิตจำนวนจำกัด
+              หรือมีข้อจำกัดในการหามาครอบครอง
+              ส่วนสิทธิพิเศษก็เป็นเรื่องของความหายากในการหามาครอบครองเช่นกัน
+              เพียงแต่มีรูปแบบที่แตกต่างออกไป
+              โดยคนที่มีสิทธิพิเศษจะต้องผ่านเกณฑ์บางอย่างเท่านั้น
+              ความหายากและสิทธิพิเศษกระตุ้นให้เกิดการบอกต่อเพราะมันทำให้ผู้คนรู้สึกเหมือนเป็นคนวงใน
+              เวลาที่เราได้ในสิ่งที่คนอื่นไม่มี เราจะรู้สึกว่าตัวเองเป็นคนพิเศษ
+              มีเอกลักษณ์ และเหนือกว่า
+              ด้วยเหตุนี้เราจึงไม่เพียงแต่ชื่นชอบผลิตภัณฑ์หรือบริการที่ได้รับมากขึ้นเท่านั้น
+              แต่ยังบอกต่อคนอื่น ๆ อีกด้วย
+              เพราะการบอกให้คนอื่นรู้จะทำให้เราดูดีนั่นเอง
+              การเป็นคนวงในจะช่วยเสริมภาพลักษณ์ทางสังคม
+            </li>
+            <br />
+          </ol>
+        </div>
+
+        <div class="col-12">
+          <hr />
+          <p class="text-right text-muted">24 March 2019</p>
+          <p class="text-right text-muted">
+            <strong>หมายเหตุ</strong> เนื้อหาใช้ประกอบการทำโปรเจคเท่านั้น
+            ไม่ได้หวังผลทางพาณิชหรือแสวงกำไร หรือหวังผลใดๆ ทั้งสิ้น
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Section  Star-->
+    <section
+      class="position-relative py-5 jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://images.unsplash.com/photo-1481624362406-b7817fa45ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="assets/image/logo.png"
+              width="150"
+              class="img-fluid"
+              alt="logo"
+            />
+            <h3 class="text-white display-4 font-weight-bold">
+              ยินต้อนรับสู่ชุมชนนักอ่านของเรา
+            </h3>
+            <div class="star-rating">
+              <!--ตรงส่วนนี้จะเป็นการเขียนในส่วนของ Star-rating-->
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <div class="star-current" style="width: 100%">
+                <!--คำสั่ง inline style="width: 100% เพื่อเป็นการให้คะแนน-->
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="semi-footer p-5 text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/image/logo.png"
+              width="40"
+              height="40"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+            BookStory
+          </a>
+          <p>
+            <i class="fa fa-phone"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 080-742-1388 <br />
+            <i class="fa fa-envelope"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : Email wissanu.khong@gmail.com <br />
+            <i class="fa fa-map-marker"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 326 ซ.นนทรี 14 แยก 12 ถ.ช่องนนทรี แขวงช่องทรี เขตยานนาวา
+            กรุงเทพมหานคร 10120
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>เมนู</h4>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/Z60mszeJpJ8"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-end">
+      <span>
+        COPYRIGHT @ 2021
+        <a href="https://www.google.co.th/" target="_blank">
+          All right Resevred
+        </a>
+      </span>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSQa6rdZPj-mPXXqE4KMaFWq6P8fPlV4&callback=initMap"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

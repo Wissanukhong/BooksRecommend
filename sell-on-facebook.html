@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/mystyle.css" />
+    <title>ขวัญสงฆ์</title>
+  </head>
+  <body>
+    <!--ตรงนี้คือส่วนของ navbar-->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha"
+    >
+      <div class="container">
+        <!--เริ่มจะเพิ่ม class container เพื่อที่เราจะสามารถจัดหน้าเว็บให้มันดูสวยงามมากขึ้น-->
+        <!-- แท็กนี้คือแท็กที่จะแสดง Logo และชื่อ ซึ่งจะอยู่ทางด้านซ้ายมือ  -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/image/logo.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+          BookStory
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarkey"
+          aria-controls="navbarkey"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--ตรงแท็กนี้จะแสดงรายการและแสดงอยู่ทางด้านขวามมือ โดยที่เราสามารถสั่งเกตโค้ดตรง Class "nabbar-nav ml" (ml) หมายถึงทางด้านซ้ายโล่งให้มาชิดทางด้านขวา-->
+        <div class="collapse navbar-collapse" id="navbarkey">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Section jaralax-->
+    <!-- section page title  -->
+    <!--ตรงส่วนนี้จะทำการกำหนด class เพื่อทำการกำหนดค่า ใน css ตามตัวอย่างคือ Class="page-title"-->
+    <header
+      class="jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://readery.co/media/catalog/product/cache/1/small_image/360x/17f82f742ffe127f42dca9de82fb58b1/1/9/19398650_10208577202062345_292478379_n.jpg');
+      "
+    >
+      <div class="blog-image">
+        <!--blog-image เพื่อเป็นการตั้งค่าให้พื้นหลังให้ได้อย่างชัดเจนมากยิ่งขึ้น-->
+        <h1 class="display-4 font-weight-bold">ขวัญสงฆ์</h1>
+        <p class="lead">
+          เรื่องเล่าของเด็กน้อยผู้ถูกทิ้งอยู่หน้าวัด เติบโตมากับหลวงตา โลกเล็กๆ
+          ผสานกับโลกกว้าง โดยมีหัวใจรู้ธรรม
+        </p>
+        <p class="lead"><u>แนะนำหนังสือน่าอ่าน โดย สมชัย ทาสะโก</u></p>
+      </div>
+    </header>
+
+    <!--section blog-detail-->
+    <section class="container blog-content">
+      <div class="row">
+        <div class="col-12">
+          <h2>ขวัญสงฆ์</h2>
+          <p>ชมัยภร แสงกระจ่าง เขียน</p>
+          <p>
+            จากเด็กน้อยที่น่ารักตั้งแต่ฉากแรกที่นอนหลับอยู่กับแม่หมาอยู่หน้าวัด
+            จนถึงฉากเป็นพระปฏิบัติดีปฏิบัติชอบให้คนกราบไหว้ด้วยใจศรัทธานี่คือ
+            “ขวัญสงฆ์” ตัวละครเอกในวรรณกรรมเยาวชนเล่มหนึ่งของ ชมัยภร แสงกระจ่าง
+            นักเขียน ศิลปินแห่งชาติสาขาวรรณศิลป์
+            เนื้อเรื่องดำเนินไปเป็นทำนองกลอนแปดอ่านเพลินได้อรรถรสชวนติดตามไปตลอดจนจบเล่มในเวลาไม่นานนัก
+          </p>
+
+          <figure class="text-center">
+            <img
+              src="assets/image/Blog/ขวัญสงฆ์.jpg"
+              alt="ขวัญสงฆ์"
+              width="350px"
+              height="500px"
+            />
+            <figcaption>ขวัญสงฆ์</figcaption>
+            <figcaption>ชมัยภร แสงกระจ่าง เขียน</figcaption>
+          </figure>
+
+          <p>
+            ทำให้เกิดคุณค่าทางอารมณ์เนื่องจากกลวิธีการเขียนและคุณค่าทางปัญญาโดยการสอดแทรกหลักคุณธรรมไว้หลายประการ
+            หลวงตาและตัวละครเอกคือ “ขวัญสงฆ์”
+            จะพาผู้อ่านผจญภัยในโลกวรรณกรรมจนบางครั้งน้ำตาก็ไหลตามออกมาเฉย ๆ
+            เหมาะสำหรับทุกคนทุกวัยในยุคสมัยปัจจุบันได้อ่านเพื่อความเบิกบานในจิตใจ
+          </p>
+
+          <p class="text-center">"เมื่อจะเกิดเลือกไม่ได้ไม่ใช่หรือ</p>
+          <p class="text-center">แต่เกิดแล้วนั่นคือต้องสานต่อ</p>
+          <p class="text-center">หากเลือกทำเลือกเป็นเห็นเพียงพอ</p>
+          <p class="text-center">กรรมย่อมก่อกรรมให้ได้กรรมดี"</p>
+
+          <p class="text-center">"เมื่อจะเป็นเลือกได้ไม่ใช่หรือ</p>
+          <p class="text-center">มีสองมือสรรค์สร้างไปให้เต็มที่</p>
+          <p class="text-center">เมื่อเลือกเป็นแล้วเป็นเต็มชีวี</p>
+          <p class="text-center">ทุกนาทีคือชีวิตลิขิตตน"</p>
+
+          <figure class="text-center">
+            <img
+              src="assets/image/S__3727362.jpg"
+              alt="ขวัญสงฆ์"
+              width="350px"
+              height="500px"
+            />
+            <figcaption>ภาพโดย สมชัย ทาสะโก</figcaption>
+          </figure>
+
+          <p>
+            พระขวัญสงฆ์วันนี้มีทุกวัด คนลำบากสาหัสคนหมองหม่น
+            สำคัญที่คนเป็นอยู่ต้องรู้กมล จึงพาพ้นกรรมได้-ใช่ฉะนี้ (หน้า ๑๕๙
+            [จบบริบูรณ์] ฉบับพิมพ์ครั้งที่ ๔ สำนักพิมพ์คมบาง,ธันวาคม ๒๕๕๕)
+          </p>
+        </div>
+
+        <div class="col-12">
+          <hr />
+          <p class="text-right text-muted">29 กรกฏาคม 2562</p>
+          <p class="text-right text-muted">
+            แนะนำหนังสือน่าอ่าน โดย สมชัย ทาสะโก
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Section  Star-->
+    <section
+      class="position-relative py-5 jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://images.unsplash.com/photo-1481624362406-b7817fa45ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="assets/image/logo.png"
+              width="150"
+              class="img-fluid"
+              alt="logo"
+            />
+            <h3 class="text-white display-4 font-weight-bold">
+              ยินต้อนรับสู่ชุมชนนักอ่านของเรา
+            </h3>
+            <div class="star-rating">
+              <!--ตรงส่วนนี้จะเป็นการเขียนในส่วนของ Star-rating-->
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <div class="star-current" style="width: 100%">
+                <!--คำสั่ง inline style="width: 100% เพื่อเป็นการให้คะแนน-->
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="semi-footer p-5 text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/image/logo.png"
+              width="40"
+              height="40"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+            BookStory
+          </a>
+          <p>
+            <i class="fa fa-phone"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 080-742-1388 <br />
+            <i class="fa fa-envelope"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : Email wissanu.khong@gmail.com <br />
+            <i class="fa fa-map-marker"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 326 ซ.นนทรี 14 แยก 12 ถ.ช่องนนทรี แขวงช่องทรี เขตยานนาวา
+            กรุงเทพมหานคร 10120
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>เมนู</h4>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/Z60mszeJpJ8"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-end">
+      <span>
+        COPYRIGHT @ 2021
+        <a href="https://www.google.co.th/" target="_blank">
+          All right Resevred
+        </a>
+      </span>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSQa6rdZPj-mPXXqE4KMaFWq6P8fPlV4&callback=initMap"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

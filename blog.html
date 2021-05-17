@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/mystyle.css" />
+    <title>blog</title>
+  </head>
+  <body>
+    <!--ตรงนี้คือส่วนของ navbar-->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha"
+    >
+      <div class="container">
+        <!--เริ่มจะเพิ่ม class container เพื่อที่เราจะสามารถจัดหน้าเว็บให้มันดูสวยงามมากขึ้น-->
+        <!-- แท็กนี้คือแท็กที่จะแสดง Logo และชื่อ ซึ่งจะอยู่ทางด้านซ้ายมือ  -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/image/logo.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+          BookStory
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarkey"
+          aria-controls="navbarkey"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--ตรงแท็กนี้จะแสดงรายการและแสดงอยู่ทางด้านขวามมือ โดยที่เราสามารถสั่งเกตโค้ดตรง Class "nabbar-nav ml" (ml) หมายถึงทางด้านซ้ายโล่งให้มาชิดทางด้านขวา-->
+        <div class="collapse navbar-collapse" id="navbarkey">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Section jaralax-->
+    <!-- section page title  -->
+    <!--ตรงส่วนนี้จะทำการกำหนด class เพื่อทำการกำหนดค่า ใน css ตามตัวอย่างคือ Class="page-title"-->
+    <header
+      class="page-title jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://images.unsplash.com/photo-1465433045946-ba6506ce5a59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4 font-weight-bold">บทความ</h1>
+            <p class="lead">แค่เปิดอ่านโลกของเราก็เปลี่ยนแล้ว</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--section blog-->
+    <section class="container py-5">
+      <!-- py การจัดตำแหน่งของ padding ตามแกลน y ก็คือ top,bottom-->
+      <div class="row pb-4">
+        <!--pb การจัดตำแหน่งของ padding-bottom-->
+        <div class="col-12 text-center">
+          <div class="btn-group-custom">
+            <button class="btn btn-primary">ทั้งหมด</button>
+            <button class="btn btn-primary">ธุรกิจ</button>
+            <button class="btn btn-primary">ประวัติ</button>
+            <button class="btn btn-primary">พัฒนาตัวเอง</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--เล่มที่ 1-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a href="blog-think-like-Jewish.html" class="warpper-card-img">
+              <img
+                src="https://asset.mebmarket.com/meb/server1/19419/Thumbnail/large.gif?4"
+                class="card-img-top"
+                alt="เขียนฝันด้วยชีวิต"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">เขียนฝันด้วยชีวิต</h5>
+              <p class="card-text">
+                “ประชาคม ลุนาชัย” จากเด็กหนุ่มแดนอีสาน
+                มุ่งหน้ามาล่าฝันที่เมืองหลวงเฉกเช่นเด็กต่างจังหวัดทั่วไป
+                อาชีพลูกจ้างร้านอาหาร คนงานโรงงาน รับจ้างเฝ้าวังกุ้ง ทำไร่
+              </p>
+            </div>
+            <div class="p-3">
+              <a
+                href="blog-think-like-Jewish.html"
+                class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--เล่มที่ 2-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a href="sell-on-facebook.html" class="warpper-card-img">
+              <img
+                src="assets/image/S__3727362.jpg"
+                class="card-img-top"
+                alt="ขวัญสงฆ์"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">ขวัญสงฆ์</h5>
+              <p class="card-text">
+                เรื่องเล่าของเด็กน้อยผู้ถูกทิ้งอยู่หน้าวัด เติบโตมากับหลวงตา
+                โลกเล็กๆ ผสานกับโลกกว้าง โดยมีหัวใจรู้ธรรม
+              </p>
+            </div>
+            <div class="p-3">
+              <a href="sell-on-facebook.html" class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--เล่มที่ 3-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a href="howtoread.html" class="warpper-card-img">
+              <img
+                src="https://mpics.mgronline.com/pics/Images/559000009783704.JPEG"
+                class="card-img-top"
+                alt="ทางจักรา "
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">ปรัชญนิยายกวีนิพนธ์ ทางจักรา</h5>
+              <p class="card-text">
+                ครูกวีในวัยหลังเกษียณกับเด็กหนุ่มกำพร้าชื่อ “ภูผา”
+                ผู้ซึ่งอาศัยข้าวก้นบาตรหลวงลุงได้ร่วมกันเดินทางเพื่อเรียนรู้
+                โลกภายนอกโดยใช้พาหนะคู่ใจในการเดินทางคือจักรยาน
+              </p>
+            </div>
+            <div class="p-3">
+              <a href="howtoread.html" class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--เล่มที่ 4-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a
+              href="How to Raise Your Self-Esteem.html"
+              class="warpper-card-img"
+            >
+              <img
+                src="https://images-se-ed.com/ws/Storage/Originals/978616/783/9786167832203L.jpg?h=232a71acb9227248e6050379cc6fda61"
+                class="card-img-top"
+                alt="พลังแห่งการเพิ่มความนับถือตัวเอง"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">พลังแห่งการเพิ่มความนับถือตัวเอง</h5>
+              <p class="card-text">
+                ความนับถือตัวเองสูงหรือต่ำ
+                คือปัจจัยสำคัญที่ชี้ว่าเราจะมีชีวิตที่สำเร็จหรือล้มเหลว
+                เป็นสุขหรืออมทุกข์ เผชิญหน้าหรือหลีกหนี
+                มีความสัมพันธ์ที่ดีหรือแย่ กล้าลงมือทำหรือปลอดภัยไว้ก่อน
+              </p>
+            </div>
+            <div class="p-3">
+              <a
+                href="How to Raise Your Self-Esteem.html"
+                class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--เล่มที่ 5-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a href="contagious.html" class="warpper-card-img">
+              <img
+                src="https://images-se-ed.com/ws/Storage/Originals/978616/287/9786162871672L.jpg?h=6550906b0908693d2261e1289e67d282"
+                class="card-img-top"
+                alt="ธรรมดาแต่ดังมาก ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">
+                ธรรมดาแต่ดังมาก ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้
+              </h5>
+              <p class="card-text">
+                หนังสือเล่มนี้ถูกออกแบบมาสำหรับคนที่อยากให้ผลิตภัณฑ์ แนวคิด
+                หรือพฤติกรรมของตัวเองแพร่กระจายไปอย่างกว้างขวาง หนังสือ
+                Contagious หรือในชื่อภาษาไทยว่า “ธรรมดาแต่ดังมาก
+                ยิงให้ตรงจุดแล้วคนจะหยุดพูดถึงคุณไม่ได้”
+              </p>
+            </div>
+            <div class="p-3">
+              <a href="contagious.html" class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--เล่มที่ 6-->
+        <section class="col-12 col-sm-6 col-md-4 p-2">
+          <div class="card h-100">
+            <a href="rework.html" class="warpper-card-img">
+              <img
+                src="https://images-se-ed.com/ws/Storage/Originals/978616/287/9786162871801L.jpg?h=86c42d894822ae57e1015b1a04905ea8"
+                class="card-img-top"
+                alt="จงทิ้งทุกอย่างที่คุณเคยรู้ ก่อนเริ่มทำธุรกิจ"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">
+                จงทิ้งทุกอย่างที่คุณเคยรู้ ก่อนเริ่มทำธุรกิจ
+              </h5>
+              <p class="card-text">
+                หนังสือ Rework หรือในชื่อภาษาไทยว่า “จงทิ้งทุกอย่างที่คุณเคยรู้
+                ก่อนเริ่มทำธุรกิจ” เขียนขึ้นจากประสบการณ์การทำธุรกิจของผู้เขียน
+                ซึ่งเริ่มต้นจากธุรกิจขนาดเล็กด้านไอที
+                เนื้อหาบางส่วนจึงสะท้อนให้เห็นการฉีกจากแนวคิดและรูปแบบการทำงานของธุรกิจขนาดใหญ่
+                หนังสือเล่มนี้จึงเหมาะสำหรับคนรุ่นใหม่ที่ต้องการเริ่มต้นทำธุรกิจขนาดเล็ก
+                และใช้โอกาสจากความก้าวหน้าทางด้านเทคโนโลยีการสื่อสารในยุคปัจจุบัน
+              </p>
+            </div>
+            <div class="p-3">
+              <a href="rework.html" class="btn btn-primary btn-block"
+                >อ่านเพิ่มเติม</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--Section  Star-->
+    <section
+      class="position-relative py-5 jarallax"
+      data-jarallax='{ "speed": 0.6 }'
+      style="
+        background-image: url('https://images.unsplash.com/photo-1481624362406-b7817fa45ecf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="assets/image/logo.png"
+              width="150"
+              class="img-fluid"
+              alt="logo"
+            />
+            <h3 class="text-white display-4 font-weight-bold">
+              ยินต้อนรับสู่ชุมชนนักอ่านของเรา
+            </h3>
+            <div class="star-rating">
+              <!--ตรงส่วนนี้จะเป็นการเขียนในส่วนของ Star-rating-->
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <span>☆</span>
+              <div class="star-current" style="width: 100%">
+                <!--คำสั่ง inline style="width: 100% เพื่อเป็นการให้คะแนน-->
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="semi-footer p-5 text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/image/logo.png"
+              width="40"
+              height="40"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+            BookStory
+          </a>
+          <p>
+            <i class="fa fa-phone"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 080-742-1388 <br />
+            <i class="fa fa-envelope"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : Email wissanu.khong@gmail.com <br />
+            <i class="fa fa-map-marker"></i>
+            <!--ตรงนี้ คือ Code ที่ทำการ Link มาจาก Font-awesome เพื่อทำการแสดง Icon-->
+            : 326 ซ.นนทรี 14 แยก 12 ถ.ช่องนนทรี แขวงช่องทรี เขตยานนาวา
+            กรุงเทพมหานคร 10120
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>เมนู</h4>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/Z60mszeJpJ8"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-end">
+      <span>
+        COPYRIGHT @ 2021
+        <a href="https://www.google.co.th/" target="_blank">
+          All right Resevred
+        </a>
+      </span>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSQa6rdZPj-mPXXqE4KMaFWq6P8fPlV4&callback=initMap"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

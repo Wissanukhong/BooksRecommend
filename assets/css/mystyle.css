@@ -1,0 +1,321 @@
+/*Table of content */
+/*
+1.Section Settings
+2.Section Carousel
+3.Section Blog
+4.section footer
+5.section page title 
+6.section Timeline
+7.Section Star
+
+*/
+
+/*
+color
+000000-2b2b2b-007bff-75c6fc-ffffff
+*/
+
+/* Section Settings */
+html, body{
+    height:100%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+#navbar{
+    transition: 0.5s;
+}
+
+
+.bg-alpha{
+    background:rgba(0,0,0,0.5)
+}
+
+.border-short-bottom {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+.border-short-bottom::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    background: #595959;
+}
+
+/* Code ตรงนี้จะเป็น Code ที่เกี่ยวข้องกับการตั้งค่าให้ตัวอักษรของ Carousel ให้มีขนาดของตัวอักษรตามที่เราต้องการ */
+@media (max-width: 768px){ /*Code บรรทัดนี้จะบอกว่า ถ้าขนาดของหน้าจอที่แสดงผลมีขนาดเล็กกว่า 768px (ดูค่าการแสดงผลจาก Bootsrap) ให้แสดงผลตามนี้ */
+    .display-4 {
+        font-size: 2.5rem,;
+    }
+}
+
+
+
+/* Section Carousel */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-img,
+.carousel-inner .active{
+    height:100%
+}
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: cover;
+    background-position: center center;
+}
+
+.carousel-caption{
+    top: 40%;
+}
+
+.backscreen{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+} 
+
+/* Section Blog */
+.warpper-card-img{
+    position: relative;
+    padding-top: 56.25%; 
+    overflow: hidden;
+}
+
+.warpper-card-img::after{
+    content:'';
+    padding-top: 56.25%; 
+    display: block;
+    height: 0;
+}
+
+.warpper-card-img img{
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.warpper-card-img img:hover{
+    transform: scale(1.1)
+}
+
+.btn-group-custom button{
+    margin-bottom: 0.5rem;
+    width: 100px;
+}
+/* class .blog-image เพื่อทำให้ background ด้านหลังเห็นได้อย่างชัดเจนมากยิ่งขึ้น */
+.blog-image{
+    padding: 200px 0px 120px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+}
+
+.blog-content{
+    padding: 50px 100px;
+    box-shadow: 0px 0px 10px #a5a5a5a5;
+}
+
+/* media responsive ของ blog-detail */
+@media(max-width: 991px){
+    .blog-content{
+        padding: 40px 50px;
+    }
+}
+
+@media(max-width: 768px){
+    .blog-content{
+        padding: 20px 30px;
+    }
+}
+
+
+/* section footer */
+.semi-footer{
+    background: #2b2b2b;
+    color: #ffffff;
+}
+/* คำสั่ง CSS ตรงส่วนนี้คือคำสั่งที่ทำให้ Footer ที่มีค่า Default ของ Browser จากเดิมที่มีสีน้ำเงินเป็นสีที่เรากำหนดขึ้นเอง */
+.semi-footer a{
+    color:#ffffff;
+}
+
+.semi-footer h4{
+    color:#75c6fc;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+} 
+
+.footer-end{
+    background:#000;
+    color:#fff;
+    font-size: 0.7rem;
+    height: 90px; 
+    line-height: 90px;
+    text-align: center;
+}
+
+#map {
+    height: 300px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
+
+/*คำส่ั่ง CSS หน้า About*/
+
+/* section page title */ /*ตรงส่วนนี้จะทำการปรับค่าของ page-title ในหน้า About เพื่อให้แสดงผลตามที่เราต้องการ*/
+   .page-title{
+       position: relative; /*ตั้งค่าให้เป็น relative เพราะว่าเพื่อให้มันอยู่กับตัวมันเองโดยไม่ขึ้นตรงกับสิ่งใด*/
+       display: block;  /*เพื่อให้ Elemen นั้นเป็น Block elemen ไม่ขึ้นตรงกับสิ่งใดเลย*/
+       padding-top: 250px;
+       padding-bottom: 100px;
+       color: #fff;
+   }
+
+/*section Timeline*/ /*เป็นการตั้งค่ามาจากหน้า About เพื่อทำการตกแต่งหน้าเว็บให้ส่วนงาม*/
+.timeline{
+    list-style: none; /*คำสั่งเคลียร์ Stlye ของ UL เพื่อไม่ให้มีจุดที่ด้านหน้า List*/
+    position: relative; /*คำส่ง relative คือไม่ให้วัตถุหลุดออกนอก Element นั้นๆ*/
+    padding: 20px 0;
+}
+
+/*คำสั่งนี้คือคำสั่งที่บอกว่า timeline นี้ชี้ไปที่ li เพื่อบอกว่า li จะมีคุณลักษณะอะไรหรือคูรสมบัติอะไร*/
+.timeline > li{
+    position: relative;
+    margin-bottom: 40px; /*การกำหนดระยะห่างของ Bottom timeline*/
+}
+
+.timeline::before{
+    position: absolute; /*คำสั่ง Absolute คือคำสั่งให้ Element นั้นสามารถเคลื่อนที่ไปไหนก็ได้ภายใต้งเื่อนไข relative (จะไม่หลุดกรอบ)*/
+    content: " "; /* จะต้องเป็นค่าว่าง*/ 
+    width: 2px; /*ความหนาของเส้น*/
+    background: #e6e6e6; /*สีของเส้น*/
+    top: 0;
+    bottom: 0;
+    left: 50%; /*คำสั่งในการจัดกลางที่วัตถุเป็น Absolute*/
+    margin-left: -1px /*ขั้นตอนการจัดกลาง คือ left: 50% จากนั้นทำการคืนค่า margin-left ครื่องหนึ่งของ width ในส่วนนี้คือ -1px(width มีค่าเท่ากับ 2 )*/
+}
+
+/*timeline-dadge จะต้องอยู่ภายใต้ li*/
+li > .timeline-badge{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #84ba3f;
+    left: 50%;
+    margin-left: -9px; /*สูตรในการจัดกลาง*/
+    border-radius: 50%;  /*คำสั่งให้มันเป็นวงกลม*/
+    background: #fff;
+    box-shadow: 0 0 0 5px #fff;
+    top: 15px
+}
+
+/*คำสั่งในการขีดเส้น*/
+li > .timeline-badge::before{ 
+    content: "";  /*ถ้าใช้คำสั่ง before จะต้องมี content เสมอ*/
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 25px;
+    height: 2px;
+    background: #e6e6e6;
+}
+
+/*คำส่ั่งที่ใช้ในการแยกซ้าย ขวา*/
+li.inverted > .timeline-badge::before{ 
+    right: -33px;
+}
+
+li > .timeline-badge p{ /*แท็ก p อยู่ใน timeline-badge และแท็กtimeline-badge อยู่ใน li คำสั่งนี้เพื่อทำการจัดตำแหน่งตัวอักษร*/
+    width:200px;
+    margin: -9px; /*คำสั่งปรับตำแหน่งขึ้นลง*/
+    margin-left: 25px; /*คำสั่งปรับตำแหน่งซ้าย-ขวา*/
+    font-size: 17px; /*ขนาดของตัวอักษร*/
+    font-weight: bold; /*ปรับตัวอักษรให้เป็นตัวหนา*/
+}
+
+li.inverted > .timeline-badge p{
+    float: right;
+    text-align: right; 
+    margin-right: 25px;
+}
+li > .timeline-card{
+    position: relative; /*เพื่อให้ตัวอักษรไม่เกินออกนอกขอบ*/
+    width: 46%; /*เป็นการกำหนดความกว้างของการแสดงตัวอักษร*/
+    float: left; /*กำหนดค่าให้กล่องข้อความอยู่ทางซ้ายมือ*/
+    text-align: right; /*คำสั่งให้ตัวอักษรชิดขวา*/
+    padding: 0 10px; /*ค่า padding ตัวที่ 1 คือ top and bottom = 0px ค่าตัวที่ 2 left right = 10px */
+}
+
+li.inverted > .timeline-card{
+    float: right;
+    text-align: left;
+}
+
+/*หลังจากที่เราเขียนโค้ด timeline เสร็จ คำสั่งแรก เราจะต้องทำการ clear: both; ก่อนเพื่อที่จะไม่ให้ block ไม่ลอยขึ้นไปทับซ้อนกัน*/
+.timeline > li::after{
+    content: ""; /*1 คือการกำหนดค่า content*/
+    clear: both; /*2.คำสั่งในการเคลียร์ค่าที่มีท้ังหมด*/
+    display: block; /*3.ใช้คำสั่ง block เพื่อให้มันขึ้นบรรทัดใหม่*/
+}
+
+/* timeline-arrow เพื่อทำการจัดการกับลูกศร*/
+/* หลังจากที่เราเขียนโค้ดเสร็จจะต้องทำการเพิ่มเติมโค้ดของ timeline-arrow ในส่วนของ Media ด้วยเพื่อที่จะให้โค้ดแสดงในแบบ Responsive */
+.timeline-arrow{
+    width: 100%; /* คำสั่งในการประกาศคลาสว่าส่วนนี้กลาง 100%  */
+    text-align: center; /* คำสั่งที่ใช้ในการจัดกลางของวัตถุ */
+    bottom: -70px; /* คำสั่งการจัดตำแหน่งวัตถุให้ลงด้านล่าง */
+    color: #e6e6e6;
+}
+
+/* media สำหรับการจัดการการแสดงผลของ timeline  คำสั่ง Media เป็นคำสั่งที่หน้าจอแสดงผลที่มีขนาดที่เล็กกว่า 768px โต้ดจะทำงานตามนี้*/
+@media (max-width: 768px ){
+    .timeline::before,
+    .timeline-badge{
+        left: 40px !important;
+    }
+    .timeline-badge::before{
+        right: -32px !important;
+    }
+    .timeline-badge p,
+    li.inverted > .timeline-badge p{
+        margin-left: 50px !important;
+        text-align: left;
+        float: left;
+    }
+    li >.timeline-card{
+        width: 100%;
+        text-align: left;
+        padding: 37px 0 0 85px; /* การจัดตำแหน่ง top right bottom left */
+    }
+    .timeline-arrow{
+        text-align: left;
+        left: 0px;
+    }
+    .timeline-arrow > i{
+        margin-left: 32px;
+    }
+
+}
+
+/* Section Star*/
+/* ☆★ */
+
+.star-rating{
+    position: relative;
+    font-size: 2em; /* คำสั่งในการเพิ่มขนาดของดาวจากเดิมเป็นขนาด 2 เท่า */
+    color: gold;
+    display: inline-block;
+}
+
+.star-current{
+    position: absolute; /* ใช้คำสั่ง Absolute เพื่อที่จะให้ดาวทึบลอยขึ้นไปทับดาวโปร่งแสง */
+    top: 0; /* ใช้คำสั่ง top : 0 ; เพื่อที่จะให้ดาวทึบแสงลอยขึ้นไปทับดาวโปร่งแสง */
+    white-space: nowrap; /* คำสั่งไม่ให้ขึ้นบันทัดใหม่ */
+}
